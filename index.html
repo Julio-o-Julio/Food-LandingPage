@@ -14,27 +14,24 @@
     <link rel="stylesheet" href="./src/styles/output.css" />
   </head>
   <body>
-    <header class="w-full py-7 px-10">
+    <header
+      id="header"
+      class="w-full py-5 px-10 sticky top-0 transition-all duration-300 z-30"
+    >
       <nav
         id="navbar"
         class="max-w-7xl mx-auto flex items-center justify-between"
       >
         <i id="navLogo" class="fa-solid fa-burger"> FOOD</i>
         <ul id="navList" class="hidden lg:flex gap-12">
-          <li class="navItem">
-            <a
-              href="#home"
-              class="text-gray-900 font-semibold border-b-4 border-amber-400"
-              >Início</a
-            >
+          <li class="navItem text-gray-400 font-semibold">
+            <a href="#home">Início</a>
           </li>
-          <li class="navItem">
-            <a href="#menu" class="text-gray-400 font-semibold">Cardápio</a>
+          <li class="navItem text-gray-400 font-semibold">
+            <a href="#menu">Cardápio</a>
           </li>
-          <li class="navItem">
-            <a href="#testimonials" class="text-gray-400 font-semibold"
-              >Avaliações</a
-            >
+          <li class="navItem text-gray-400 font-semibold">
+            <a href="#testimonials">Avaliações</a>
           </li>
         </ul>
         <button
@@ -69,7 +66,7 @@
       </div>
     </header>
 
-    <main id="content" class="w-full px-10">
+    <main id="content" class="w-full px-6 sm:px-10">
       <section
         id="home"
         class="max-w-7xl mx-auto lg:py-7 flex lg:min-h-[calc(100dvh-90px)] relative"
@@ -78,7 +75,10 @@
           id="shape"
           class="hidden lg:block w-1/2 h-[105%] bg-amber-100 absolute rounded-tl-[40%] rounded-tr-[30%] rounded-br-[0%] rounded-bl-[20%] -top-7 -right-10 z-0"
         ></div>
-        <div id="cta" class="m-auto max-w-2xl items-center text-center lg:w-[40%] lg:items-start lg:text-start flex flex-col gap-7 mt-[5%]">
+        <div
+          id="cta"
+          class="m-auto max-w-2xl items-center text-center lg:w-[40%] lg:items-start lg:text-start flex flex-col gap-7 mt-[5%]"
+        >
           <h1 class="text-gray-800 text-6xl font-bold">
             O sabor que vai até <span class="text-amber-400">você</span>
           </h1>
@@ -86,7 +86,10 @@
             Cada refeição é um convite para saborear o melhor da cozinha, com
             pratos que trazem alegria e bem-estar para o seu dia a dia.
           </p>
-          <div id="ctaBtns" class="flex items-center justify-center gap-6 flex-wrap">
+          <div
+            id="ctaBtns"
+            class="flex items-center justify-center gap-6 flex-wrap"
+          >
             <a
               href="#"
               class="cursor-pointer flex items-center bg-amber-400 rounded-xl pt-2 pb-3 px-4 text-gray-800 font-semibold shadow-md hover:bg-amber-300 transition-colors duration-200"
@@ -105,22 +108,22 @@
             </a>
           </div>
 
-          <div id="sicialMediaBtns" class="flex gap-4">
+          <div id="socialMediaBtns" class="flex gap-4">
             <a
               href="#"
-              class="flex items-center justify-center w-11 h-10 text-xl rounded-lg text-gray-800 shadow-md hover:shadow-lg transition-shadow duration-300"
+              class="flex items-center justify-center w-11 h-10 text-xl rounded-lg text-gray-800 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white"
             >
               <i class="fa-brands fa-whatsapp"></i>
             </a>
             <a
               href="#"
-              class="flex items-center justify-center w-11 h-10 text-xl rounded-lg text-gray-800 shadow-md hover:shadow-lg transition-shadow duration-300"
+              class="flex items-center justify-center w-11 h-10 text-xl rounded-lg text-gray-800 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white"
             >
               <i class="fa-brands fa-instagram"></i>
             </a>
             <a
               href="#"
-              class="flex items-center justify-center w-11 h-10 text-xl rounded-lg text-gray-800 shadow-md hover:shadow-lg transition-shadow duration-300"
+              class="flex items-center justify-center w-11 h-10 text-xl rounded-lg text-gray-800 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white"
             >
               <i class="fa-brands fa-facebook"></i>
             </a>
@@ -138,10 +141,253 @@
           />
         </div>
       </section>
-      <section id="menu" class="max-w-7xl mx-auto py-7"></section>
-      <section id="testimonials" class="max-w-7xl mx-auto py-7"></section>
+      <section
+        id="menu"
+        class="max-w-7xl mx-auto pt-24 pb-12 flex flex-col items-center justify-center"
+      >
+        <h2 class="text-amber-400 font-bold text-2xl">Cardápio</h2>
+        <h3 class="font-bold text-4xl text-center">Nossos pratos especiais</h3>
+        <div
+          id="dishes"
+          class="w-full flex gap-6 mt-8 justify-center flex-wrap lg:flex-nowrap"
+        >
+          <div
+            class="dish w-full sm:w-[calc(50%-12px)] lg:w-1/4 flex flex-col items-center rounded-2xl gap-5 p-5 bg-white shadow-md relative overflow-hidden"
+          >
+            <div
+              class="dishHeart w-[70px] h-[70px] bg-amber-400 absolute flex items-center justify-center text-2xl text-amber-50 rounded-tl-[0] rounded-tr-[40px] rounded-br-[0] rounded-bl-[44px] -top-2 -right-2"
+            >
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/img/dish.png" alt="Foto de um prato de comida" />
+            <h4 class="font-bold">1° Prato bom demais</h4>
+            <p class="text-center text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="dishRate">
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <span>(499+)</span>
+            </div>
+            <div class="dishPrice flex items-center gap-3">
+              <h5 class="font-bold">R$19,90</h5>
+              <button
+                class="cursor-pointer flex items-center justify-center bg-amber-400 rounded-xl pt-2 pb-3 px-4 font-semibold shadow-md hover:bg-amber-300 transition-colors duration-200"
+              >
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="dish w-full sm:w-[calc(50%-12px)] lg:w-1/4 flex flex-col items-center rounded-2xl gap-5 p-5 bg-white shadow-md relative overflow-hidden"
+          >
+            <div
+              class="dishHeart w-[70px] h-[70px] bg-amber-400 absolute flex items-center justify-center text-2xl text-amber-50 rounded-tl-[0] rounded-tr-[40px] rounded-br-[0] rounded-bl-[44px] -top-2 -right-2"
+            >
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/img/dish2.png" alt="Foto de um prato de comida" />
+            <h4 class="font-bold">2° Prato bom demais</h4>
+            <p class="text-center text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="dishRate">
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <span>(265)</span>
+            </div>
+            <div class="dishPrice flex items-center gap-3">
+              <h5 class="font-bold">R$22,90</h5>
+              <button
+                class="cursor-pointer flex items-center justify-center bg-amber-400 rounded-xl pt-2 pb-3 px-4 font-semibold shadow-md hover:bg-amber-300 transition-colors duration-200"
+              >
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="dish w-full sm:w-[calc(50%-12px)] lg:w-1/4 flex flex-col items-center rounded-2xl gap-5 p-5 bg-white shadow-md relative overflow-hidden"
+          >
+            <div
+              class="dishHeart w-[70px] h-[70px] bg-amber-400 absolute flex items-center justify-center text-2xl text-amber-50 rounded-tl-[0] rounded-tr-[40px] rounded-br-[0] rounded-bl-[44px] -top-2 -right-2"
+            >
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/img/dish3.png" alt="Foto de um prato de comida" />
+            <h4 class="font-bold">3° Prato bom demais</h4>
+            <p class="text-center text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="dishRate">
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <span>(18)</span>
+            </div>
+            <div class="dishPrice flex items-center gap-3">
+              <h5 class="font-bold">R$27,90</h5>
+              <button
+                class="cursor-pointer flex items-center justify-center bg-amber-400 rounded-xl pt-2 pb-3 px-4 font-semibold shadow-md hover:bg-amber-300 transition-colors duration-200"
+              >
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="dish w-full sm:w-[calc(50%-12px)] lg:w-1/4 flex flex-col items-center rounded-2xl gap-5 p-5 bg-white shadow-md relative overflow-hidden"
+          >
+            <div
+              class="dishHeart w-[70px] h-[70px] bg-amber-400 absolute flex items-center justify-center text-2xl text-amber-50 rounded-tl-[0] rounded-tr-[40px] rounded-br-[0] rounded-bl-[44px] -top-2 -right-2"
+            >
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/img/dish4.png" alt="Foto de um prato de comida" />
+            <h4 class="font-bold">4° Prato bom demais</h4>
+            <p class="text-center text-gray-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="dishRate">
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <i class="fa-solid fa-star text-amber-400"></i>
+              <span>(87)</span>
+            </div>
+            <div class="dishPrice flex items-center gap-3">
+              <h5 class="font-bold">R$34,90</h5>
+              <button
+                class="cursor-pointer flex items-center justify-center bg-amber-400 rounded-xl pt-2 pb-3 px-4 font-semibold shadow-md hover:bg-amber-300 transition-colors duration-200"
+              >
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="testimonials"
+        class="max-w-7xl mx-auto pt-24 pb-12 flex flex-col lg:flex-row items-center justify-center gap-12"
+      >
+        <img
+          id="testimonialsChef"
+          src="src/img/chef.png"
+          class="hidden lg:block w-1/3 h-auto"
+          alt="Imagem da chef de cozinha"
+        />
+        <div
+          id="testimonialsContent"
+          class="w-full sm:w-3/4 lg:w-1/2 flex lg:block flex-col items-center"
+        >
+          <h2 class="text-amber-400 font-bold text-2xl text-center">
+            Depoimentos
+          </h2>
+          <h3 class="font-bold text-4xl text-center">
+            O que os clientes falam sobre nós
+          </h3>
+          <div id="feedbacks" class="flex flex-col gap-5 my-10">
+            <div
+              class="feedback flex flex-col sm:flex-row items-center gap-5 bg-white p-3 rounded-xl shadow-md"
+            >
+              <img
+                src="src/img/homem.jpg"
+                class="w-24 h-24 rounded-full"
+                alt="Foto de uma pessoa"
+              />
+              <div class="feedbackContent">
+                <p class="font-semibold flex justify-between">
+                  Fulano de tal
+                  <span class="text-amber-400">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p class="text-gray-600 mt-2">
+                  "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione nihil aliquid neque, adipisci nemo similique quibusdam
+                  incidunt suscipit, eveniet asperiores aspernatur laudantium
+                  quam atque."
+                </p>
+              </div>
+            </div>
+            <div
+              class="feedback flex flex-col sm:flex-row items-center gap-5 bg-white p-3 rounded-xl shadow-md"
+            >
+              <img
+                src="src/img/mulher.jpg"
+                class="w-24 h-24 rounded-full"
+                alt="Foto de uma pessoa"
+              />
+              <div class="feedbackContent">
+                <p class="font-semibold flex justify-between">
+                  Fulana de tal
+                  <span class="text-amber-400">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p class="text-gray-600 mt-2">
+                  "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione nihil aliquid neque, adipisci nemo similique quibusdam
+                  incidunt suscipit, eveniet asperiores aspernatur laudantium
+                  quam atque."
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="cursor-pointer items-center justify-center bg-amber-400 rounded-xl pt-2 pb-3 px-4 font-semibold shadow-md hover:bg-amber-300 transition-colors duration-200"
+          >
+            Ver mais avaliações
+          </button>
+        </div>
+      </section>
     </main>
 
+    <footer class="bg-amber-100">
+      <img src="src/img/wave.svg" />
+      <div
+        class="flex gap-6 justify-center flex-col lg:flex-row lg:justify-between items-center pb-8 px-[8%]"
+      >
+        <span class="text-gray-600 font-semibold">&copy; 2024 Julio Souza</span>
+        <div id="socialMediaBtns" class="flex gap-4">
+          <a
+            href="#"
+            class="flex items-center justify-center w-11 h-10 text-xl rounded-lg text-gray-800 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center justify-center w-11 h-10 text-xl rounded-lg text-gray-800 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="#"
+            class="flex items-center justify-center w-11 h-10 text-xl rounded-lg text-gray-800 shadow-md hover:shadow-lg transition-shadow duration-300 bg-white"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="src/js/script.js"></script>
   </body>
 </html>
